@@ -1,26 +1,4 @@
-<h1>Directives</h1>
-<div [appHighlight] = "'red'" [defaultColor]="'indigo'"  >Something Just like this</div>
-<hr>
-<h1>Structural Directives</h1>
-<h3>*ngIf</h3>
-<div *ngIf="switch">Some conditional Text</div>
-<button (click)="onSwitch()">Click to toggle</button>
+<h2>my-about</h2>
+<h1>My Tiny Library App</h1>
 
-<hr>
-<h3>*ngFor</h3>
-<ul>
-  <li *ngFor="let item of items; let i = index" >{{item}} - Index is : ({{i}}) and the 4rd el: {{items[i]}}</li>
-</ul>
-<hr>
-<h1>Ng Switch Demo</h1>
-<div [ngSwitch]="value">
-  <p *ngSwitchCase="10">10</p>
-  <p *ngSwitchCase="100">100</p>
-  <p *ngSwitchDefault>Default</p>
-</div>
-<hr>
-<h2>Custom Structural Directive Unless</h2>
-<div *appUnless ="switch">Unless Directive text</div>
-<hr>
-<h1>Dependency Injection</h1>
-<app-cmp-a></app-cmp-a>
+<my-collection></my-collection>

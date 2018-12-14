@@ -6,14 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-  
-  private switch = true;
-  onSwitch(){
-    this.switch = !this.switch;
- }
-
- private items = [1,2,3,4,5];
- private value=10;
-
+  title = 'AngularWorkShop';
 }
