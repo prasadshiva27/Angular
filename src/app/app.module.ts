@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { CollectionComponent } from './collection/collection.component';
 import { RatingCategoryPipe } from './pipes/rating-category.pipe';
 import { RatingComponent } from './rating/rating.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { RatingComponent } from './rating/rating.component';
     AboutComponent,
     CollectionComponent,
     RatingCategoryPipe,
-    RatingComponent
+    RatingComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { RatingComponent } from './rating/rating.component';
     MatButtonModule,
     MatLineModule,
     MatInputModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
 
   ],
   providers: [],
